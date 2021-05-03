@@ -1,0 +1,819 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: auto;
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+header{
+  background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+}
+
+.textos{
+    width: 50%;
+    color:#fff;
+}
+
+.textos h1{
+    font-size:60px;
+    animation: moverDerecha 1s ease-in;
+
+}
+
+.textos h2{
+    font-size:30px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a{
+    display: inline-block;
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #190A05;  /* fallback for old browsers */
+
+
+
+}
+
+
+.uno{
+    
+-webkit-clip-path: circle(0% at 0 0);
+clip-path: circle(0% at 0 0);
+
+}
+
+.dos{
+    
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+    
+    }
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:1000px){
+    img{
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    img{
+        height: 370px;
+    }
+    .textos h1{
+        font-size: 70px;
+    }
+
+    .textos h2{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    img{
+        height: 250px;
+    }
+    .textos h1{
+        font-size: 40px;
+    }
+
+    .textos h2{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    .textos h1{
+        font-size: 60px;
+    }    
+}
+
+@media screen and (max-width:340px){
+    img{
+        height: 160px;
+    }
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos a{
+        width: 120px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+    
+}
+
+#menu{
+    position: absolute;
+    background: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#aebcbf+0,6e7774+50,0a0e0a+51,0a0809+100;Black+Gloss */
+background: #aebcbf; /* Old browsers */
+background: -moz-linear-gradient(top,  #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+;
+    width: 334px;
+    height: 42px;
+    border-radius: 10px;
+
+}
+
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#menu ul li{
+    float: left;
+}
+
+#menu a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 12px 26px;
+    font-size: 14px;
+    overflow: static;
+
+
+}
+
+.barra {
+    color: rgba(153,153,153,1);
+    padding: 15px 0 0 0 ;
+}
+
+#menu a:hover{
+    color: yellow;
+}
+
+
+#menu ul li:hover {
+    color: red;
+    background: rgba(0,0,0,0.2);
+    animation: 1s ms 1;
+}
+@keyframes ms{
+    0%{
+        opacity: 0px;
+        transform: scale(1.6);
+    }
+}
+
+
+.menubotones{
+    display:block;
+}
+
+
+
+/* BOTON DE CONSULTA*/
+.texto{
+    text-align: center;
+    align-items: center;
+}
+.texto a{
+    display: inline-block;
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+    background: #111;
+    font-size: 20px;
+
+}
+
+/*par acompltar sesion*/
+
+
+.caja {
+    width: 360px;
+    height: 390px;
+    background: #F7F7F7;
+    color: #fff;
+    position: relative;
+    padding: 70px 30px;
+    border: 5px solid #F5F5F5;
+    background: #FFFFFF;
+    border-radius: 20px;
+    opacity:2; 
+    box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 16%);
+    transition: background 0.3s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+}
+
+.caja img{
+    width: 250px;
+    height: 120px;
+    top: -80px;
+    left: 14px;
+    position: relative;
+}
+
+.caja h1{
+    font-size: 25px;
+    text-align: left;
+    color: #1a2537;
+    top: -50px;
+    margin: 0px;
+    position: relative;
+}
+
+
+.caja input{
+    top: -60px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+.caja input:hover{
+    border: 1px solid blue;
+}
+.caja input[type ="submit"]{
+    cursor: pointer;
+    color: #fff;
+     background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.caja input[type ="submit"]:hover{
+    color: yellow;
+}
+
+
+
+/* ESTO ES PARA EL FOOTER BOTONES*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 60px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 80px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* BOTON DE TITULO*/
+.main .contenedora{
+    margin: auto;
+    display: table;
+
+
+}
+.main .contenedora h1{
+    float: left;
+    color: #000;
+    position: relative;
+}
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #fff;
+    border-left: 1px solid #000;
+    animation: maquina 5s infinite alternate;
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+/* VIDEO*/
+
+video {
+    position: relative;
+    width: 400px;
+    height: 499px;
+    top: -100px;
+
+
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+.cuadrado{
+    width: 477px;
+    height: 350px;
+    margin:50px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 20px;
+    opacity:2; 
+    box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 16%);
+    transition: background 0.3s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+
+ 
+}
+
+.cuadrado{
+    background: url(../imagenes/laboral4.jpg);
+    border-radius: 20px;
+    
+ 
+}
+.triangulo{
+    width: 477px;
+    height: 350px;
+    margin:50px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+     background: url(../imagenes/linea.png);
+    border-radius: 20px;
+    opacity:2; 
+    box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 16%);
+    transition: background 0.3s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+
+ 
+}
+
+
+.circulo{
+    width: 477px;
+    height: 350px;
+    margin:50px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 20px;
+    opacity:2; 
+    box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 16%);
+    transition: background 0.3s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+
+ 
+}
+ 
+ .rectangulo{
+    width: 377px;
+    height: 150px;
+    margin:50px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 20px;
+    opacity:2; 
+    box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 16%);
+    transition: background 0.3s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+
+ 
+}
+.rombo{
+    width: 277px;
+    height: 150px;
+    margin:50px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 20px;
+    opacity:2; 
+    box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 16%);
+    transition: background 0.3s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+
+ 
+}
+
+
+
+.footer-col img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+/* BOTON DE TITULO*/
+.main .contenedora{
+    margin: auto;
+    display: table;
+
+
+}
+.main .contenedora h1{
+    float: left;
+    color: #000;
+    position: relative;
+}
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #fff;
+    border-left: 1px solid #000;
+    animation: maquina 5s infinite alternate;
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    
+    .footer-col img{
+    left: -40px;
+    position: relative;
+}
+}
+
+@media (max-width: 992px){
+    body{
+        font-size: 12px;
+
+    }
+    
+}
+
+@media (max-width: 768px){
+    .textos h1{
+    font-size:30px;
+    animation: moverDerecha 1s ease-in;
+
+}
+    
+}
+
+@media screen and (max-width: 600px){
+
+     .footer-col img{
+    left: -10px;
+    position: relative;
+}
+}
+
+
+aside .contenedor .cuadrado img{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    border-radius: 50%;
+
+}
+aside .contenedor .rombo img{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    border-radius: 50%;
+
+}
+aside .contenedor .rectangulo img{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    border-radius: 50%;
+
+}
+aside .contenedor .circulo img{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    border-radius: 50%;
+
+}
+
+aside .contenedor .cuadrado a{
+    text-decoration: none;
+    font-size: 15px;
+    background:#111;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+aside .contenedor .cuadrado a:hover{
+    background:#54595F;
+    color: yellow;
+}
+aside .contenedor .rombo a{
+    text-decoration: none;
+    font-size: 15px;
+    background:#111;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+aside .contenedor .rombo a:hover{
+    background:#54595F;
+    color: yellow;
+}
+aside .contenedor .rectangulo a{
+    text-decoration: none;
+    font-size: 15px;
+    background:#111;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+aside .contenedor .rectangulo a:hover{
+    background:#54595F;
+    color: yellow;
+}
+aside .contenedor .circulo a{
+    text-decoration: none;
+    font-size: 15px;
+    background:#111;
+    color: #fff;
+    padding: 12px;
+    border-radius: 15px;
+}
+aside .contenedor .circulo a:hover{
+    background:#54595F;
+    color: yellow;
+}
+
+aside .contenedor .triangulo img{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    border-radius: 50%;
+
+}
+aside .contenedor .triangulo a{
+    text-decoration: none;
+    font-size: 15px;
+    background:#111;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+aside .contenedor .triangulo a:hover{
+    background:#54595F;
+    color: yellow;
+}
+
+@media (max-width: 576px){
+   #menu{
+    width: 251px;
+    height: 36px;
+    }
+    #menu a{
+    font-size: 9px;
+    }
+    .textos h1{
+    font-size:15px;
+    animation: moverDerecha 1s ease-in;
+
+}
+
+    
+ 
+}
+    
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
